@@ -1,4 +1,59 @@
 html,
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 62.5%;
+  color: white;
+  font-family: "Josefin Slab", serif;
+  font-weight: 500;
+}
+
+.search-header {
+  font-size: 2rem;
+  margin: 1.5rem auto 1.5rem auto;
+  text-align: center;
+}
+
+.search-header-link,
+.search-header-link:visited,
+.search-header-link:link {
+  text-decoration: none;
+  color: #000;
+}
+
+.search-header-link:hover {
+  text-decoration: underline;
+}
+
+.search-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60vw;
+  margin: 2rem auto;
+}
+
+#search-area {
+  width: 30vw;
+  height: 10vh;
+  font-size: 2rem;
+  margin: 3rem auto;
+}
+
+.submit-button {
+  font-size: 2rem;
+}
+
+html,
 #root {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
