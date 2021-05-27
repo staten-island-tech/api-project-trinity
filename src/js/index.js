@@ -39,34 +39,7 @@ const query = async function () {
 query();
 
   
-/*       DOMSelectors.grid.insertAdjacentHTML(
-        "beforeend",
-        `<div class="movie-card">
-        <div class="movie-card-front">
-        <img
-        src="${movie.poster_path}"
-        alt=""
-        class="poster"
-      />
-        </div>
-        <div class="movie-card-back">
-          <h3 class="movie-card-header">${movie.original_title}</h3>
-          <div class="score-box">
-            <p class="user-score">Community Score</p>
-            <p class="user-score">${movie.rt_score}</p>
-          </div>
 
-          <div class="release-box">
-            <p class="release-date">Released</p>
-            <p class="release-date">${movie.release_date}</p>
-          </div>
-
-        </div>
-      </div> `
-      );   
-    });*/
-
-    //console.log(data);
 
 
  
