@@ -1,117 +1,59 @@
+@import "_search.scss";
+
 $font-main: "Asap", sans-serif;
 $font-second: "Josefin Slab", serif;
+
 html,
-body {
+#root {
   box-sizing: border-box;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   font-size: 62.5%;
-  color: white;
+  color: #000;
   font-family: $font-second;
   font-weight: 500;
-}
-body {
-  background-color: #111;
+  max-width: 1200px;
 }
 
-.header {
-  font-size: 5.2rem;
-
-  margin: 3rem auto;
+h1{
   text-align: center;
+  padding: 1.5rem 2.5rem;
+  background-image: linear-gradient(120deg, #fbc2eb 0%, #a6c1ee 100%);
+  margin: 0 0 2rem 0;
+  font-size: 1.5rem;
+  color: #fff;
 }
-.top-rated {
-  margin: 1rem auto 2rem auto;
+
+h2{
+  display: block;
+  font-size: 4.5rem;
   text-align: center;
-  font-size: 3.8rem;
-}
-.movie-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 90vw;
-  background-color: white;
-  margin: 1rem auto;
-  padding: 3rem auto;
-  align-items: center;
-}
-.movie-card {
-  height: 65vh;
-  width: 20vw;
-  margin: 0 auto;
-  position: relative;
-  margin: 2rem auto;
-}
-.movie-card-front {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  /* background-image: url("https://image.tmdb.org/t/p/w300/r7vmZjiyZw9rpJMQJdXpjgiCOk9.jpg"); */
-  background-position: center;
-  z-index: 3;
-  transition: all 0.3s;
-}
-.poster {
-  width: 100%;
-  height: 100%;
-}
-.movie-card-back {
-  transition: all 0.3s;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-
-  display: none;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  color: white;
-  background-color: rgba(33, 33, 33, 0.8);
-  width: 100%;
-  height: 100%;
-}
-.movie-card-header {
-  font-size: 2.4rem;
-  text-transform: uppercase;
-  margin: 1rem auto;
-
-  text-align: center;
-}
-.score-box,
-.release-box {
-  text-align: center;
+  padding: 1.5rem 2.5rem;
 }
 
-.movie-genres {
-  font-size: 1.6rem;
-  padding: 1rem 2rem;
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-items: center;
-}
-.movie-genre {
-  list-style: none;
-}
-.user-score {
-  font-size: 2rem;
-}
-.release-date {
-  font-size: 2rem;
+p{
+  padding: 0 2.5rem 2.5rem;
+  margin: 0;
 }
 
-.movie-card:hover .movie-card-front {
-  z-index: 1;
+//.container {
+// display: flex;
+// flex-wrap: wrap;
+//}
+
+.card{
+  margin: 3rem 15rem;
+  border: 1px solid grey;
+  box-shadow: 2px 4px 25px rgba(0, 0, 0, .3);
+  border-radius: 12px;
+  overflow: hidden; //fixes border radius 
+  transition: all .2s linear; //smooth transition when hovered
 }
-.movie-card:hover .movie-card-back {
-  z-index: 3;
-  display: flex;
+
+.card:hover{
+  box-shadow: 2px 8px 45px rgba(0, 0, 0, .15);
+  transform: translate3D(0, -2px, 0);
 }
-.test {
-  color: black;
-  font-size: 3rem;
-}
+
+
+
